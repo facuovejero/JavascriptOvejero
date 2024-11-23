@@ -50,6 +50,6 @@ function entradasCompra (){
     } else{
         alert(`Lo sentimos, no tenemos suficiente stock de ${producto.name}.`);
     }
-}
+};
 
 entradasCompra()
