@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+main {
+    background-color: #3b657a;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.cardDiv img{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.classCard{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.classCard .cardDiv{
+    width: 210px;
+    margin: 15px;
+    padding: 0,7em;
+    border-radius: 5%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: #dee7e7;
+}
+
+.classCard .cardDiv h3{
+    margin: 0.5em 0em;
+}
+
+.classCard .cardDiv h4{
+    font-size: 0,875em;
+    margin: 0.5em 0em;
+    color: #333;
+    font-weight: normal;
+}
+
+.classCard .cardDiv .button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5%;
+    padding: 0,7em;
+    background-color: #000;
+    color: #fff;
+    margin: 0.5em 0em;
+    font-size: 17px;
+}
+
+.classCard .cardDiv:hover{
+    transform: translateY(-10px);
+    box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
+}
+
+/*!-----Header-----*/
+/**--INDEX---*/
+.text-bg-dark {
+    background-color: #142026 !important;
+}
+
+header .navbar .container-fluid h1 {
+    color: #f4f4f2;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+header .navbar-container .navbar {
+    background-color: #142026;
+}
+
+header .container-fluid .imagenes {
+    width: 70px;
+}
+
+.navbar-toggler {
+    background-color: #243a69;
+}
+
+header .navbar .offcanvas-body li a {
+    color: #f4f4f2 !important;
+}
+
+/*! NOTIS  */
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    animation: fadeOut 3s forwards;
+}
+
+.notificacion.error {
+    background-color: #f44336;
+}
+
+/*! CARDS  */
+
+
+
+
+
+/* @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #e9f0c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    margin-bottom: 0.5rem;
+}
+
+.card-content button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #2980b9;
+}
+
+#salida {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    text-align: center;
+} */
+
+/*?-----Footer-----*/
+/**--INDEX---*/
+footer {
+    margin: 0px;
+    padding: 8px;
+    background-color: #142026;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.foot-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .letter-container {
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .end {
+    display: flex;
+    justify-content: end;
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+footer a img {
+    width: 120px;
+}
+
+footer .abajo {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+footer .abajo {
+    margin-top: 5px;
+    padding-left: 0px !important;
+}
+
+footer .abajo li {
+    list-style: none;
+    font-size: 19px;
+}
+
+footer .follow p {
+    list-style: none;
+    font-size: 40px;
+}
+
+footer div img {
+    width: 40px;
+}
+
+
+
+/**MAPA*/
+footer div section iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.map-container {
+    /* padding-top: 5px; */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer div h6 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+
+/**ICONOS*/
+footer .icon-container {
+    /* margin: 5px; */
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas:
+        "follow follow"
+        "wpp face"
+        "ig tiktok";
+}
+
+footer .icon-container p {
+    margin-bottom: 0px !important;
+}
+
+.follow {
+    grid-area: follow;
+    width: 100%;
+    height: 100%;
+}
+
+.wpp {
+    grid-area: wpp;
+    width: 100%;
+    height: 100%;
+}
+
+.face {
+    grid-area: face;
+    width: 100%;
+    height: 100%;
+}
+
+.ig {
+    grid-area: ig;
+    width: 100%;
+    height: 100%;
+}
+
+.tiktok {
+    grid-area: tiktok;
+    width: 100%;
+    height: 100%;
+}
+
+/**--CUENTA---*/
+
+.foot-cuenta {
+    padding: 10px;
+}
