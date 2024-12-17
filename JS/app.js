@@ -1,41 +1,50 @@
 sessionStorage.setItem('cart', JSON.stringify(Storage.json));
 const cart = []; 
 
-const entradas = `[
-    {
-        "id": 1,
-        "name": "Duki",
-        "precio": 140,
-        "stock": 4,
-        "image": "img/dukiAmeri.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Airbag",
-        "precio": 110,
-        "stock": 8,
-        "image": "img/airbagShow.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Margarita",
-        "precio": 50,
-        "stock": 15,
-        "image": "img/margarita.jpg"
-    },
-    {
-        "id": 5,
-        "name": "AC/DC",
-        "precio": 190,
-        "stock": 4,
-        "image": "img/AcDc.jpg"  
+class Entradas {
+    constructor(id, name, precio, stock, image) {
+        this.id = id;
+        this.name = name;
+        this.precio = precio;
+        this.stock = stock;
+        this.image = image;
     }
-]`; //LA IMAGEN DE ACDC NO CUMPLE CON EL HEIGHT COMO LAS OTRAS
+}
 
-const jsonData = JSON.parse(entradas);
+const menuEntradas = [
+    new Entradas(1, "Duki", 140, 4, 'img/dukiAmeri.jpg'),
+    new Entradas(2, "Airbag", 110, 8, 'img/airbagShow.jpg'),
+    new Entradas(3, "Margarita", 50, 15, 'img/margarita.jpg'),
+    new Entradas(5, "AC/DC", 190, 4, 'img/AcDc.jpg'),
+]; //LA IMAGEN DE ACDC NO CUMPLE CON EL HEIGHT COMO LAS OTRAS
 
 if (!sessionStorage.getItem('menuEntradas')) {
     sessionStorage.setItem('menuEntradas', JSON.stringify(menuEntradas));
+}
+
+function createCard(menuEntradas) {
+    const cards = document.querySelector("#cardHtml");
+    menuEntradas.forEach(({ id, name, precio, stock, image }) => {
+        const card = document.createElement("div");
+        card.classList.add('cardDiv');
+        card.innerHTML = `
+            <img src="${image}" alt="imagen de ${name}" class="imgCards">
+            <h3 class="h3Card">${name}</h3>
+            <h3 class="h3Card">$${precio}</h3>
+            <h4 class="h4Card">Stock: ${stock}</h4>
+            <button id="${id}" class="button">Comprar</button>
+        `;
+        cards.appendChild(card);
+    });
+    loadEvents();
+}
+
+function createStandCompra (clave, valor)
+{
+    const standCompra = document.querySelector ('#salida');
+        const compra = document.createElement ('divSalida');
+        compra.classList.add('divSalidaCss')
+
 }
 
 function actualizarStockCard(productId, nuevoStock) {
@@ -46,7 +55,6 @@ function actualizarStockCard(productId, nuevoStock) {
     }
 }
 
-// Mostrar notificación
 function mostrarNotificacion(mensaje, tipo) {
     const main = document.querySelector("main");
     const notification = document.createElement("div");
@@ -102,22 +110,6 @@ function loadEvents() {
     });
 }
 
-function createCard(menuEntradas) {
-    const cards = document.querySelector("#cardHtml");
-    menuEntradas.forEach(({ id, name, precio, stock, image }) => {
-        const card = document.createElement("div");
-        card.classList.add('cardDiv');
-        card.innerHTML = `
-            <img src="${image}" alt="${name}" class="imgCards">
-            <h3 class="h3Card">${name}</h3>
-            <h3 class="h3Card">$${precio}</h3>
-            <h4 class="h4Card">Stock: ${stock}</h4>
-            <button id="${id}" class="button">Comprar</button>
-        `;
-        cards.appendChild(card);
-    });
-    loadEvents();
-}
 
 const storedMenuEntradas = JSON.parse(sessionStorage.getItem('menuEntradas')) || [];
 createCard(storedMenuEntradas);

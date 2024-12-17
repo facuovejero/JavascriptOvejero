@@ -28,7 +28,8 @@
         <section class="navbar-container">
             <nav class="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="./img/goliveLogo.png" alt="logo de la pagina" class="imagenes"></a>
+                    <a class="navbar-brand" href="./index.html"><img src="./img/goliveLogo.png" alt="logo de la pagina"
+                            class="imagenes"></a>
                     <h1>GoLive</h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -45,7 +46,8 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">Log In</a>
+                                    <a class="nav-link active" aria-current="page" href="./pages/register.html">Log
+                                        In</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./index.html">Inicio</a>
@@ -76,10 +78,32 @@
             </nav>
         </section>
     </header>
-    <!--! MI NAVBAR ESTA ROTO Y ESTOY BUSCANDO LA SOLUCION AL PROBLEMA, NO ES EL MODELO FINAL DE LA PAGINA-->
     <main id="app">
-        <div id="contenedor" class="grid">
-        </div>
+        <section class="carousel-container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=".." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
         <section id="cardHtml" class="classCard"> </section>
 
         <div id="salida">Aquí se mostrarán los resultados.</div>

@@ -82,6 +82,13 @@ h1{
     box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
 }
 
+/* .divSalidaCss{
+    background-color: #333;
+} */
+
+.salida{
+    background-color: #333;
+}
 /*!-----Header-----*/
 /**--INDEX---*/
 .text-bg-dark {
