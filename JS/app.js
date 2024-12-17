@@ -1,22 +1,38 @@
-sessionStorage.setItem('cart', JSON.stringify([]));
+sessionStorage.setItem('cart', JSON.stringify(Storage.json));
 const cart = []; 
 
-class Entradas {
-    constructor(id, name, precio, stock, image) {
-        this.id = id;
-        this.name = name;
-        this.precio = precio;
-        this.stock = stock;
-        this.image = image;
+const entradas = `[
+    {
+        "id": 1,
+        "name": "Duki",
+        "precio": 140,
+        "stock": 4,
+        "image": "img/dukiAmeri.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Airbag",
+        "precio": 110,
+        "stock": 8,
+        "image": "img/airbagShow.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Margarita",
+        "precio": 50,
+        "stock": 15,
+        "image": "img/margarita.jpg"
+    },
+    {
+        "id": 5,
+        "name": "AC/DC",
+        "precio": 190,
+        "stock": 4,
+        "image": "img/AcDc.jpg"  
     }
-}
+]`; //LA IMAGEN DE ACDC NO CUMPLE CON EL HEIGHT COMO LAS OTRAS
 
-const menuEntradas = [
-    new Entradas(1, "Duki", 140, 4, 'img/dukiAmeri.jpg'),
-    new Entradas(2, "Airbag", 110, 8, 'img/airbagShow.jpg'),
-    new Entradas(3, "Margarita", 50, 15, 'img/margarita.jpg'),
-    new Entradas(5, "AC/DC", 190, 4, 'img/AcDc.jpg'),
-];
+const jsonData = JSON.parse(entradas);
 
 if (!sessionStorage.getItem('menuEntradas')) {
     sessionStorage.setItem('menuEntradas', JSON.stringify(menuEntradas));

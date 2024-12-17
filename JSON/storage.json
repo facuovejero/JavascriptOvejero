@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Duki",
+        "precio": 140,
+        "stock": 4,
+        "image": "img/dukiAmeri.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Airbag",
+        "precio": 110,
+        "stock": 8,
+        "image": "img/airbagShow.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Margarita",
+        "precio": 50,
+        "stock": 15,
+        "image": "img/margarita.jpg"
+    },
+    {
+        "id": 5,
+        "name": "AC/DC",
+        "precio": 190,
+        "stock": 4,
+        "image": "img/AcDc.jpg"
+    }
+]
