@@ -1,2 +1,1 @@
-Mi entrega va dando a entender lo que va a ser mi proyecto final 
-que es un carrito de compras para comprar entradas web.
+En esta entrega estoy mostrando una idea general de lo que será mi proyecto final. La idea es crear un carrito de compras para comprar entradas en línea, donde los usuarios puedan buscar, seleccionar y pagar sus entradas de forma fácil y rápida. Quiero que sea algo práctico, con una interfaz sencilla y opciones claras, además de integrar diferentes métodos de pago para que sea más accesible. A medida que avance en el desarrollo, voy a ir agregando más funciones y mejorando los detalles para que todo funcione de la mejor manera posible.
