@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    background-color: #e3e5d7;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*!-----Header-----*/
+/**--INDEX---*/
+header {
+    background-color: #97d3f1;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.103);
+    padding: 10px 0;
+}
+
+h1 {
+    width: 100px;
+    margin: 0px !important;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+/*! CAMBIOS */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+header nav img {
+    height: 25px;
+}
+
+.containerLink {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+#cuentaCarrito {
+    background-color: #27b1bf;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+}
+
+#logo {
+    height: 40px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.cardDivCart {
+    margin: 4px;
+    background-color: #b2c2c7;
+    border-radius: 10px;
+    display: flex !important;
+    gap: 20px;
+    align-items: center;
+}
+
+.cardDivCart .imgCart {
+    border-top-left-radius: 10%;
+    border-end-start-radius: 10%;
+    height: 100px;
+    aspect-ratio: 1.5;
+}
+
+.cardDivCart img h3 {
+    width: 130px;
+}
+
+#cardHtml {
+    display: grid;
+    width: 500px;
+    margin: auto;
+}
+
+#totales {
+    text-align: center;
+}
+
+.buttonCart {
+    align-items: center;
+    background-color: #37474c;
+    border: 0;
+    border-radius: 200px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    width: 14px;
+    height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.buttonCart:hover,
+.buttonCart:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.buttonCart:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.buttonCart:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+#reiniciar {
+        align-items: center;
+        background-color: #FFE7E7;
+        background-position: 0 0;
+        border: 1px solid #FEE0E0;
+        border-radius: 11px;
+        box-sizing: border-box;
+        color: #D33A2C;
+        cursor: pointer;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 33.4929px;
+        list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+        padding: 2px 12px;
+        text-align: left;
+        text-decoration: none;
+        text-shadow: none;
+        text-underline-offset: 1px;
+        transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        word-break: break-word;
+    }
+
+    #reiniciar:active,
+    #reiniciar:hover,
+    #reiniciar:focus {
+        outline: 0;
+    }
+
+
+    #reiniciar:active {
+        background-color: #D33A2C;
+        box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+        color: #FFFFFF;
+    }
+
+    #reiniciar:hover {
+        background-color: #FFE3E3;
+        border-color: #FAA4A4;
+    }
+
+    #reiniciar:active:hover,
+    #reiniciar:focus:hover,
+    #reiniciar:focus {
+        background-color: #D33A2C;
+        box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+        color: #FFFFFF;
+    }

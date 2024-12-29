@@ -7,25 +7,61 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
 }
 
 main {
-    background-color: #3b657a;
+    background-color: #e3e5d7;
     margin-top: 0px;
     display: flex;
+    flex-direction: column !important;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
 
-h1{
-    width: 100%;
-    text-align: center;
-    padding: 1em;
+/*! CARDS */
+button{
+    cursor: pointer;
 }
+.classCard {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 2px;
+        grid-auto-flow: row;
+        justify-items: center;
+        grid-template-areas:
+            "duki airbag margarita acdc"
+            "taylorSwift callejero c-r-o relsb";
+    }
 
-.cardDiv img{
+    .duki {
+        grid-area: duki;
+    }
+    .airbag {
+        grid-area: airbag;
+    }
+    .margarita {
+        grid-area: margarita;
+    }
+    .acdc {
+        grid-area: acdc;
+    }
+    .taylorSwift {
+        grid-area: taylorSwift;
+    }
+    .callejero {
+        grid-area: callejero;
+    }
+    .c-r-o {
+        grid-area: c-r-o;
+    }
+    .relsb {
+        grid-area: relsb;
+    }
+
+
+.cardDiv img {
     width: 100%;
     height: 70%;
     display: flex;
@@ -35,7 +71,7 @@ h1{
     border-top-right-radius: 5%;
 }
 
-.classCard{
+.classCard {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -43,89 +79,172 @@ h1{
     text-align: center;
 }
 
-.classCard .cardDiv{
+.classCard .cardDiv {
     width: 210px;
     margin: 15px;
-    padding: 0,7em;
+    padding: 0, 7em;
     border-radius: 5%;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-color: #dee7e7;
+    background-color: #6c8c94;
 }
 
-.classCard .cardDiv h3{
+.classCard .cardDiv h3 {
     margin: 0.5em 0em;
 }
 
-.classCard .cardDiv h4{
-    font-size: 0,875em;
+.classCard .cardDiv h4 {
+    font-size: 24px;
     margin: 0.5em 0em;
     color: #333;
     font-weight: normal;
 }
 
-.classCard .cardDiv .button{
-    width: 50%;
+.classCard .cardDiv .card-button {
+    width: 70%;
     height: 40px;
     border: none;
     border-radius: 5%;
-    padding: 0,7em;
+    padding: 0, 7em;
     background-color: #000;
     color: #fff;
     margin: 0.5em 0em;
     font-size: 17px;
 }
 
-.classCard .cardDiv:hover{
+.classCard .cardDiv:hover {
     transform: translateY(-10px);
-    box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
+    box-shadow: 1.25px 1.25px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* .divSalidaCss{
     background-color: #333;
 } */
 
-.salida{
-    background-color: #333;
-}
-/*!-----Header-----*/
-/**--INDEX---*/
-.text-bg-dark {
-    background-color: #142026 !important;
+.totalAcumulado {
+    background-color: #3b657a;
+    font-size: 24px;
 }
 
-.navbar{
-    flex-wrap: nowrap !important;
-    padding: 0px !important;
+.salida-main {
+    display: flex;
+    background-color: lightblue;
+    width: 300px;
+    height: 100px;
+    border-radius: 3%;
 }
 
-header .navbar .container-fluid h1 {
-    color: #f4f4f2;
-    text-align: center ;
-    font-size: 35px;
+.salida-main p {
+    font-size: 24px;
+}
+
+/*! ---CAROUSEL--- */
+.carousel-container {
+    border-radius: 2% !important;
     margin: 5px;
     padding: 5px;
+    width: 90%;
+    height: 50%;
+    object-fit: contain;
 }
 
-header .navbar-container .navbar {
-    background-color: #142026;
+.slider_img{
+    transition: .2s !important;
 }
 
-header .container-fluid .imagenes {
-    width: 70px;
+.carousel-container img {
+
+    border-radius: 2%;
+    width: 100%;
+    height: 500px;
 }
 
-.navbar-toggler {
-    background-color: #243a69;
+/*!-----Header-----*/
+/**--INDEX---*/
+header{
+    background-color: #97d3f1;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.103);
+    padding: 10px 0;
 }
 
-header .navbar .offcanvas-body li a {
-    color: #f4f4f2 !important;
+h1 {
+    width: 100px;
+    margin: 0px !important;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+/*! CAMBIOS */
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+header nav img{
+    height: 25px;
+}
+
+.containerLink{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+#cuentaCarrito{
+    background-color: #27b1bf;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+}
+
+#logo{
+    height: 40px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+a{
+    text-decoration: none !important;
+    color: #000 !important;
 }
 
 /*! NOTIS  */
-.notificacion {
+
+.toastr {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    min-height: 30px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    bottom: -555px;
+    right: 30px;
+}
+
+.toastr.sucess {
+    background-color: #78bb67;
+    border: 2px solid #599b4a;
+}
+
+.toastr.error {
+    background-color: #f33119;
+    border: 2px solid #c82512;
+}
+
+/* .notificacion {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -138,7 +257,7 @@ header .navbar .offcanvas-body li a {
 
 .notificacion.error {
     background-color: #f44336;
-}
+} */
 
 /*?-----Footer-----*/
 /**--INDEX---*/
@@ -255,3 +374,85 @@ footer .icon-container p {
 .foot-cuenta {
     padding: 10px;
 }
+
+/*! CARRITO  */
+
+/* .cart-buy {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.cart-button {
+    background: none;
+    border: 1px solid #213f4f;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    border-color: #356985;
+}
+
+.cart-button:focus {
+    outline: 2px solid #356985;
+    outline-offset: 2px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 200px;
+    overflow: hidden;
+}
+
+.dropdown-content h3 {
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 8px 16px;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+ */
+/*? TICKETS */
