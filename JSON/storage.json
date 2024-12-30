@@ -3,56 +3,48 @@
         "id": 1,
         "name": "Duki",
         "precio": 140,
-        "stock": 4,
         "image": "image/dukiAmeri.webp"
     },
     {
         "id": 2,
         "name": "Airbag",
         "precio": 110,
-        "stock": 8,
         "image": "image/airbagShow.webp"
     },
     {
         "id": 3,
         "name": "Margarita",
         "precio": 50,
-        "stock": 15,
         "image": "image/margarita.webp"
     },
     {
         "id": 4,
         "name": "AC/DC",
         "precio": 190,
-        "stock": 4,
         "image": "image/acdcshow.webp"
     },
     {
         "id": 5,
         "name": "Taylor Swift",
         "precio": 200,
-        "stock": 30,
         "image": "image/TaylorSwift.webp"
     },
     {
         "id": 6,
         "name": "Callejero Fino",
         "precio": 70,
-        "stock": 4,
         "image": "image/callejerofino.webp"
     },
     {
         "id": 7,
         "name": "C.R.O",
         "precio": 130,
-        "stock": 4,
         "image": "image/c.r.oTour.webp"
     },
     {
         "id": 8,
         "name": "Rels B",
         "precio": 190,
-        "stock": 4,
         "image": "image/rels-b.webp"
     }
 ]

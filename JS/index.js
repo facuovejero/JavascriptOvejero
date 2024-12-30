@@ -27,7 +27,6 @@ function crearTarjetasProductosInicio(productos) {
         <img src="${producto.image}" alt="imagen de ${producto.name}" class="imgCards">
         <h3 class="h3Card">${producto.name}</h3>
         <h3 class="h3Card">$${producto.precio}</h3>
-        <h4 class="h4Card">Stock: ${producto.stock}</h4>
         <button id="${producto.id}" class="card-button">Agregar al carrito</button>`;
         contenedorTarjetas.appendChild(entradaCard);
         

@@ -42,7 +42,6 @@ function crearTarjetasProductosInicio() {
             <img src="../${producto.image}" alt="imagen de ${producto.name}" class="imgCart">
             <h3>${producto.name}</h3>
             <h3>$${producto.precio}</h3>
-            <h4>Stock: ${producto.stock}</h4>
             <div>
                 <button class="buttonCart">-</button>
                 <span class="cantidad">${producto.cantidad}</span>

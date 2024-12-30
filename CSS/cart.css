@@ -29,7 +29,6 @@ header {
 }
 
 h1 {
-    width: 100px;
     margin: 0px !important;
     text-align: center;
     padding: 0px 10px 0px 10px;
@@ -96,7 +95,8 @@ a {
     aspect-ratio: 1.5;
 }
 
-.cardDivCart img h3 {
+.cardDivCart h3 {
+    text-align: center;
     width: 130px;
 }
 
@@ -111,6 +111,7 @@ a {
 }
 
 .buttonCart {
+    align-content: center;
     align-items: center;
     background-color: #37474c;
     border: 0;
@@ -157,54 +158,95 @@ a {
 }
 
 #reiniciar {
-        align-items: center;
-        background-color: #FFE7E7;
-        background-position: 0 0;
-        border: 1px solid #FEE0E0;
-        border-radius: 11px;
-        box-sizing: border-box;
-        color: #D33A2C;
-        cursor: pointer;
-        display: flex;
-        font-size: 1rem;
-        font-weight: 500;
-        line-height: 33.4929px;
-        list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
-        padding: 2px 12px;
-        text-align: left;
-        text-decoration: none;
-        text-shadow: none;
-        text-underline-offset: 1px;
-        transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        word-break: break-word;
-    }
+    align-items: center;
+    background-color: #FFE7E7;
+    background-position: 0 0;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
 
-    #reiniciar:active,
-    #reiniciar:hover,
-    #reiniciar:focus {
-        outline: 0;
-    }
+#reiniciar:active,
+#reiniciar:hover,
+#reiniciar:focus {
+    outline: 0;
+}
 
 
-    #reiniciar:active {
-        background-color: #D33A2C;
-        box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-        color: #FFFFFF;
-    }
+#reiniciar:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
 
-    #reiniciar:hover {
-        background-color: #FFE3E3;
-        border-color: #FAA4A4;
-    }
+#reiniciar:hover {
+    background-color: #FFE3E3;
+    border-color: #FAA4A4;
+}
 
-    #reiniciar:active:hover,
-    #reiniciar:focus:hover,
-    #reiniciar:focus {
-        background-color: #D33A2C;
-        box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-        color: #FFFFFF;
-    }
+#reiniciar:active:hover,
+#reiniciar:focus:hover,
+#reiniciar:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+#comprarAhora {
+    background: #92f67a;
+    border: 1px solid #92f67a;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#comprarAhora:hover,
+#comprarAhora:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #49bb3d;
+}
+
+#comprarAhora:active {
+    opacity: .5;
+}
+
+.buttonCrt {
+    display: flex;
+    padding: 10px;
+}
